@@ -1,71 +1,34 @@
- 
 <html>
-  <head>
-    <title>Emotion To Emoji</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-  <body>
-  <div class="container">
-  
-    <center>
-      <h2 class = "btn btn-warning">
-        ☻FaCePoSiTiOn☺
-        <br>
-        <h3>This App recognizes your emotion based on your position. Please do not move artificially</h3>
-        <span>&#128528;</span>
-        <span>&#128532;</span>
-        <span>&#128522;</span>
-      </h2>
-      <br><br>
-
-      <p style="font-size: 22px;">Take your selfie to generate emoji
-      	<br>
-        <b style="color: yellow">Are you Happy?</b>
-        <br>
-        <b style="color: black">Are you Sad?</b>
-        <br>
-        <b style="color: red">Are you Angry?</b>
-        <br>
-      </p>
-
-      <div class="col-md-4 col-sm-12 col-xs-12">
-	      <label>Webcam view - </label>
-        <br>
-        <div id="webcamm"></div>
-        <br>
-        <button onclick = "take_snapshot();" class name = "btn btn-warning">Capture Image</button>
-      </div>
-     <div class="col-md-4 col-sm-12 col-xs-12">
-       <label>Prediction 1</label>
-       <h3 id = "resultofEmo"></h3>
-       <h3 id = "resultofEmoji"></h3>
-     </div> 
-     <div class="col-md-4 col-sm-12 col-xs-12">
-       <label>Prediction 2</label>
-       <h3 id = "resultofEmo2"></h3>
-       <h3 id = "resultofEmoji2 "></h3>
-     </div> 
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <label>snapshot</label>
-        <div id = "sultan"></div>
-        <button onclick = "recog();" class = "btn btn-danger">Predict Emotion</button>
-      </div>
-    </center>
-
-  </div>
-
-<script src="main.js"></script>
-
-  </body>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1>
+                Font Manipulator
+            </h1>
+            <br>
+            <br>
+            <p class = "btn btn-primary">Move your wrists together to make the font smaller; away from each other to do the opposite</p>
+            <span id = "spanid"></span>
+            <div id = "footer">Created By: Dhava Rajamanikandan</div>
+        </center>
+    </body>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #footer
+        {
+            bottom: 0;
+            position: absolute;
+            background-color: red;
+            width: 100%;
+            float: right;
+        }
+    </style>
+    <script src = "main.js"></script>
 </html>
-
- 
